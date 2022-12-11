@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hello Garden</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hallo_ich_bin_tom_und_freue_mich_dich_heute_kennenzulernen">Hallo ich bin Tom und freue mich dich heute kennenzulernen, und immer wenn du auf mich drückst helfe ich dir</string>
+    <string name="ich_m_chte_dir_heute_zeigen_was_wir_mit_rent_a_garden_meinen">Ich möchte dir heute zeigen was wir mit Rent a Garden meinen</string>
+    <string name="erklärung">Ein neuer Trend macht in Deutschland Furore: „Rent a garden”, was besagt, dass interessierte Hobbygärtner in einem angemieteten Garten, Gemüse anbauen und ernten können. Viele Städter können sich sehr gut vorstellen, einen eigenen Garten zu besitzen.
+
+Die Gründe dafür sind verschieden. Einmal um einfach mehr Zeit in der Natur zu verbringen, der gesunden Ernährung wegen, oder aber auch um mehr Bewegung zu bekommen und nicht extra dafür ein Fitness-Studio besuchen zu müssen.
+
+Aber in erster Line lockt natürlich der Gedanke, gesundes Gemüse zu essen, von dem man auch weiß, woher es kommt.
+
+Dann folgt „Eins zu werden mit der Natur” was für viele bedeutet, z.B. die Pflanzenvielfalt in allen Farben zu erleben, ihren Duft zu riechen sowie bei allen Witterungen draußen zu sein.</string>
+    <string name="ich_freue_mich_das_du_hierher_gefunden_hast_ich_m_chte_dir_auf_den_n_chsten_2_screen_erkl_ren_f_r_was_diese_app_ist">Ich freue mich das du hierher gefunden hast, ich möchte dir auf den nächsten 2 Screen erklären für was diese App ist</string>
+    <string name="und_genau_das_wollen_wir_auch_in_eure_region_bringen">Und genau das wollen wir auch in eure Region bringen</string>
+    <string name="fertig_vorbereitete_g_rten_mieten">Fertig vorbereitete Gärten mieten</string>
+    <string name="erkl_rung">Erklärung</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/greetingFragment">
+
+
+    <fragment
+        android:id="@+id/greetingFragment"
+        android:name="com.example.hellogarden.ui.greetings.GreetingFragment"
+        android:label="fragment_greeting"
+        tools:layout="@layout/fragment_greeting" >
+        <action
+            android:id="@+id/action_greetingFragment_to_appEinleitungsFragment"
+            app:destination="@id/appEinleitungsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appEinleitungsFragment"
+        android:name="com.example.hellogarden.ui.appeinleitung.AppEinleitungsFragment"
+        android:label="fragment_app_einleitungs"
+        tools:layout="@layout/fragment_app_einleitungs" >
+        <action
+            android:id="@+id/action_appEinleitungsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.hellogarden.ui.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.hellogarden.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.hellogarden.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailGardenFragment"
+            app:destination="@id/detailGardenFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myRentsFragment"
+            app:destination="@id/myRentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailGardenFragment"
+        android:name="com.example.hellogarden.ui.detail.DetailGardenFragment"
+        android:label="fragment_detail_garden"
+        tools:layout="@layout/fragment_detail_garden" >
+        <action
+            android:id="@+id/action_detailGardenFragment_to_rentFragment"
+            app:destination="@id/rentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.hellogarden.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/myRentsFragment"
+        android:name="com.example.hellogarden.ui.myrent.MyRentsFragment"
+        android:label="fragment_my_rents"
+        tools:layout="@layout/fragment_my_rents" />
+    <fragment
+        android:id="@+id/rentFragment"
+        android:name="com.example.hellogarden.ui.myrent.RentFragment"
+        android:label="fragment_rent"
+        tools:layout="@layout/fragment_rent" >
+        <action
+            android:id="@+id/action_rentFragment_to_gardenRequestFragment"
+            app:destination="@id/gardenRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gardenRequestFragment"
+        android:name="com.example.hellogarden.GardenRequestFragment"
+        android:label="fragment_garden_request"
+        tools:layout="@layout/fragment_garden_request" />
+</navigation>
