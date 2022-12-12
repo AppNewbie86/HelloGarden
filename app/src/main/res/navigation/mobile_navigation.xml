@@ -66,8 +66,8 @@
         android:label="fragment_detail_garden"
         tools:layout="@layout/fragment_detail_garden" >
         <action
-            android:id="@+id/action_detailGardenFragment_to_rentFragment"
-            app:destination="@id/rentFragment" />
+            android:id="@+id/action_detailGardenFragment_to_gardenRequestFragment"
+            app:destination="@id/gardenRequestFragment" />
     </fragment>
     <fragment
         android:id="@+id/galleryFragment"
@@ -83,14 +83,31 @@
         android:id="@+id/rentFragment"
         android:name="com.example.hellogarden.ui.myrent.RentFragment"
         android:label="fragment_rent"
-        tools:layout="@layout/fragment_rent" >
-        <action
-            android:id="@+id/action_rentFragment_to_gardenRequestFragment"
-            app:destination="@id/gardenRequestFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_rent" />
     <fragment
         android:id="@+id/gardenRequestFragment"
         android:name="com.example.hellogarden.GardenRequestFragment"
         android:label="fragment_garden_request"
-        tools:layout="@layout/fragment_garden_request" />
+        tools:layout="@layout/fragment_garden_request" >
+        <action
+            android:id="@+id/action_gardenRequestFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.hellogarden.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.example.hellogarden.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" >
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_rentFragment"
+            app:destination="@id/rentFragment" />
+    </fragment>
 </navigation>

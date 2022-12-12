@@ -22,6 +22,8 @@ class MainFragment : Fragment() {
     private lateinit var rentGardenBtn: Button
     private lateinit var galleryBtn: Button
     private lateinit var myOffersBtn: Button
+    private lateinit var profilBtn: Button
+
 
 
     private val viewModel: MainViewModel by activityViewModels()
@@ -48,6 +50,8 @@ class MainFragment : Fragment() {
             findNavController()
                 .navigate(MainFragmentDirections.actionMainFragmentToDetailGardenFragment())
         }
+
+
 
 
     }

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -24,6 +25,8 @@ class GreetingFragment : Fragment() {
      */
 
     private lateinit var binding: FragmentGreetingBinding
+    private lateinit var dialog: TextView
+
     private lateinit var goforwardBtn: Button
     private lateinit var startbackground: ImageView
     private lateinit var welcomegreetingtext: ImageView
@@ -49,10 +52,7 @@ class GreetingFragment : Fragment() {
         return binding.root
 
 
-
-
     }
-
 
 
     /**
@@ -61,6 +61,7 @@ class GreetingFragment : Fragment() {
      */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         /**
          * Navigation zu LoginFragment

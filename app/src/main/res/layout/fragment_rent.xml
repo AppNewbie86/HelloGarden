@@ -30,6 +30,7 @@
             android:id="@+id/cardView3"
             android:layout_width="367dp"
             android:layout_height="582dp"
+            app:cardBackgroundColor="#E8E6E6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView22">
@@ -42,10 +43,12 @@
                     android:id="@+id/textInputEditText3"
                     android:layout_width="321dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="155dp"
+                    android:layout_marginTop="157dp"
                     android:fontFamily="@font/atma_light"
                     android:hint="Wie ist ihr Name ?"
                     android:minHeight="48dp"
+                    android:textColor="#131313"
+                    android:textColorHint="#131313"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -58,6 +61,8 @@
                     android:fontFamily="@font/atma_light"
                     android:hint="Welches Angebot möchten Sie gerne?"
                     android:minHeight="48dp"
+                    android:textColor="#020202"
+                    android:textColorHint="#050505"
                     app:layout_constraintEnd_toEndOf="@+id/textInputEditText3"
                     app:layout_constraintStart_toStartOf="@+id/textInputEditText3"
                     app:layout_constraintTop_toBottomOf="@+id/textInputEditText3" />
@@ -69,6 +74,8 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/atma_light"
                     android:hint="Geben Sie bitte ihre Postleitzahl ein ?"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
                     app:layout_constraintEnd_toEndOf="@+id/textInputEditText2"
                     app:layout_constraintStart_toStartOf="@+id/textInputEditText2"
                     app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
@@ -76,7 +83,7 @@
                 <ImageView
                     android:id="@+id/imageView19"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:src="@drawable/bildschirm_foto_2022_12_10_um_11_51_31"
                     app:layout_constraintBottom_toTopOf="@+id/textInputEditText3"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +110,8 @@
                     android:gravity="start|top"
                     android:hint="Erzählen Sie kurz ein paar Worte was sie vorhaben mit ihrem Garten ?"
                     android:inputType="textMultiLine"
+                    android:textColor="#040303"
+                    android:textColorHint="#040303"
                     app:layout_constraintEnd_toEndOf="@+id/spinner2"
                     app:layout_constraintStart_toStartOf="@+id/spinner2"
                     app:layout_constraintTop_toBottomOf="@+id/spinner2" />
@@ -117,7 +126,7 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="#009688"
             android:fontFamily="@font/atma_light"
-            android:text="Bestätigen"
+            android:text="Buchen"
             app:layout_constraintEnd_toEndOf="@+id/cardView3"
             app:layout_constraintStart_toStartOf="@+id/cardView3"
             app:layout_constraintTop_toBottomOf="@+id/cardView3" />

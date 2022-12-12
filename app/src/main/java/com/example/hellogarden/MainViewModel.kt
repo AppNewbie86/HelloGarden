@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.hellogarden.data.Repository
 import com.example.hellogarden.data.models.Member
+import com.example.hellogarden.data.models.ProductArticle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
@@ -26,6 +27,15 @@ const val TAG = "MainViewModel"
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = Repository()
+
+
+    private val _product = MutableLiveData<List<ProductArticle>>()
+    val product: LiveData<List<ProductArticle>>
+        get() = _product
+
+    init {
+        _product.value = repository.loadProducts()
+    }
 
 
     /**

@@ -30,7 +30,7 @@ class DetailGardenFragment : Fragment() {
 
         binding.forwardBtn.setOnClickListener {
             findNavController()
-                .navigate(DetailGardenFragmentDirections.actionDetailGardenFragmentToRentFragment())
+                .navigate(DetailGardenFragmentDirections.actionDetailGardenFragmentToGardenRequestFragment())
         }
 
 

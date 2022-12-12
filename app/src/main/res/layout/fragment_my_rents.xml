@@ -32,13 +32,12 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="72dp"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/atma_light"
                 android:text="Warenkorb"
                 android:textColor="#009688"
                 android:textSize="34sp"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
@@ -46,6 +45,9 @@
                 android:layout_width="351dp"
                 android:layout_height="87dp"
                 android:layout_marginTop="32dp"
+                app:cardBackgroundColor="#F3EFEF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -78,7 +80,7 @@
                 android:layout_height="171dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="68dp"
-                android:rotation="15"
+                android:rotation="35"
                 android:src="@drawable/boy"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -86,9 +88,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="345dp"
                 android:layout_height="411dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
                 app:cardBackgroundColor="#79D8CECE"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -115,11 +116,10 @@
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
                         android:layout_marginTop="36dp"
                         android:fontFamily="@font/atma_light"
                         android:text="Ihr Vollständiger Name"
-                        android:textColor="#1E1D1D"
+                        android:textColor="#FF0E0E0E"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -128,12 +128,11 @@
                         android:id="@+id/editTextTextMultiLine"
                         android:layout_width="177dp"
                         android:layout_height="34dp"
-                        android:layout_marginStart="8dp"
                         android:ems="10"
                         android:gravity="start|top"
                         android:inputType="textMultiLine"
                         app:layout_constraintBottom_toBottomOf="@+id/textView14"
-                        app:layout_constraintStart_toEndOf="@+id/textView14"
+                        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine2"
                         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
                     <TextView
@@ -143,7 +142,7 @@
                         android:layout_marginTop="28dp"
                         android:fontFamily="@font/atma_light"
                         android:text="Ihre Postleitzahl"
-                        android:textColor="#403E3E"
+                        android:textColor="#FF0E0E0E"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="@+id/textView14"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -166,14 +165,14 @@
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="88dp"
+                        android:layout_marginTop="32dp"
                         android:backgroundTint="#009688"
                         android:fontFamily="@font/atma_light"
                         android:text="Bestätigen"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
 
                     <TextView
                         android:id="@+id/textView24"
@@ -183,6 +182,7 @@
                         android:layout_marginTop="36dp"
                         android:fontFamily="@font/atma_light"
                         android:text="Ihre Auswahl"
+                        android:textColor="#0E0E0E"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -199,6 +199,18 @@
                         android:textOff="wird geprüft"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editTextTextMultiLine4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine2"
+                        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine2"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
