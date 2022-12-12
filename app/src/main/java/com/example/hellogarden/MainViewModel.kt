@@ -29,10 +29,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = Repository()
 
 
+    // Konstante zum Speichern der ProductDaten
     private val _product = MutableLiveData<List<ProductArticle>>()
     val product: LiveData<List<ProductArticle>>
         get() = _product
 
+    // value product wird aufgerufen und lädt die Producte
     init {
         _product.value = repository.loadProducts()
     }
