@@ -51,6 +51,16 @@ class MainFragment : Fragment() {
                 .navigate(MainFragmentDirections.actionMainFragmentToDetailGardenFragment())
         }
 
+         binding.profilBtn.setOnClickListener {
+             findNavController()
+                 .navigate(MainFragmentDirections.actionMainFragmentToProfilFragment())
+         }
+
+        binding.galleryBtn.setOnClickListener {
+            findNavController()
+                .navigate(MainFragmentDirections.actionMainFragmentToGalleryFragment())
+        }
+
 
 
 

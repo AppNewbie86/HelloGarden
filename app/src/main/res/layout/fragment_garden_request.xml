@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E1EDECEC">
+        android:background="@drawable/farmerorient">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/product_recycler"

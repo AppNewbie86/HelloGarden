@@ -14,6 +14,18 @@
         android:background="#BFF6F3F3">
 
         <ImageView
+            android:id="@+id/farmerorinet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/farmerorient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detail_image" />
+
+        <ImageView
             android:id="@+id/detail_image"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -30,6 +42,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:textColor="#4C4B4B"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:textColor="#2C2C2C"
             app:layout_constraintStart_toStartOf="@+id/detail_title"
             app:layout_constraintTop_toBottomOf="@+id/detail_title"
             tools:text="01.12.2022" />
@@ -66,6 +80,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:justificationMode="inter_word"
+            android:textColor="#222121"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +93,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="92dp"
             android:backgroundTint="#009688"
+            android:elevation="25dp"
             android:text="Buchen"
+            app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

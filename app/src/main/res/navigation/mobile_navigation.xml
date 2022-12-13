@@ -59,6 +59,9 @@
         <action
             android:id="@+id/action_mainFragment_to_myRentsFragment"
             app:destination="@id/myRentsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailGardenFragment"
@@ -95,9 +98,13 @@
     </fragment>
     <fragment
         android:id="@+id/profilFragment"
-        android:name="com.example.hellogarden.ProfilFragment"
+        android:name="com.example.hellogarden.ui.profil.ProfilFragment"
         android:label="fragment_profil"
-        tools:layout="@layout/fragment_profil" />
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailProductFragment"
         android:name="com.example.hellogarden.DetailProductFragment"
