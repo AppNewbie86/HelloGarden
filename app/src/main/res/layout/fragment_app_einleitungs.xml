@@ -123,6 +123,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 android:focusable="true" />
 
+            <ImageView
+                android:id="@+id/goVideoBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:srcCompat="@drawable/ic_baseline_play_circle_filled_24" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </layout>

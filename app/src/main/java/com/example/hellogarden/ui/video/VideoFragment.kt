@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.MediaController
 import android.widget.Toast
 import android.widget.VideoView
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import com.example.hellogarden.MainViewModel
 import com.example.hellogarden.R
@@ -39,11 +40,13 @@ class VideoFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_video, container, false)
+    ): View {
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_video, container, false)
+
+        return binding.root
     }
 
 
@@ -53,71 +56,41 @@ class VideoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         simpleVideoView = binding.simpleVideoView
         if (mediaControls == null) {
-
-
-            /**
-             * bei Fragments benutzt man requireContext
-             * creating an object of media controller class
-             */
-
+            // bei Fragments benutzt man requireContext
+            // creating an object of media controller class
             mediaControls = MediaController(requireContext())
-
-            /**
-             *  set the anchor view for the video view
-             */
-
+            // set the anchor view for the video view
             mediaControls!!.setAnchorView(this.simpleVideoView)
         }
-
         /**
-         *  set the media controller for video view
+         * Immer Null Savety beachten nicht einfach null setzen
          */
 
-
+        // set the media controller for video view
         simpleVideoView!!.setMediaController(mediaControls)
-
-        /**
-         * set the absolute path of the video file which is going to be played
-         */
-
+        // set the absolute path of the video file which is going to be played
         simpleVideoView!!.setVideoURI(
             Uri.parse(
                 "android.resource://"
                         + requireContext().packageName + "/" + R.raw.garten
             )
         )
-
-
         simpleVideoView!!.requestFocus()
-
-        /**
-         *  starting the video
-         */
-
+        // starting the video
+        // TODO VideoStart in einen ClickOnLISTENER SETZEN
         simpleVideoView!!.start()
-
-
-        /**
-         * display a toast message
-         * after the video is completed
-         */
-
+        // display a toast message
+        // after the video is completed
         simpleVideoView!!.setOnCompletionListener {
             Toast.makeText(
                 requireContext(), "Video completed",
                 Toast.LENGTH_LONG
             ).show()
-
         }
-
-        /**
-         * display a toast message if any
-         * error occurs while playing the video
-         */
-
+        // display a toast message if any
+        // error occurs while playing the video
         simpleVideoView!!.setOnErrorListener { mp, what, extra ->
             Toast.makeText(
                 requireContext(), "An Error Occurred " +
@@ -125,8 +98,5 @@ class VideoFragment : Fragment() {
             ).show()
             false
         }
-
-
     }
-
 }

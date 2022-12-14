@@ -50,5 +50,10 @@ class AppEinleitungsFragment : Fragment() {
             findNavController()
                 .navigate(AppEinleitungsFragmentDirections.actionAppEinleitungsFragmentToSignUpFragment())
         }
+
+        binding.goVideoBtn.setOnClickListener {
+            findNavController()
+                .navigate(AppEinleitungsFragmentDirections.actionAppEinleitungsFragmentToVideoFragment())
+        }
     }
 }

@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_appEinleitungsFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_appEinleitungsFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -90,8 +93,8 @@
     <fragment
         android:id="@+id/gardenRequestFragment"
         android:name="com.example.hellogarden.GardenRequestFragment"
-        android:label="fragment_garden_request"
-        tools:layout="@layout/fragment_garden_request" >
+        android:label="gardenRequest"
+        tools:layout="@layout/fragment_garden_request">
         <action
             android:id="@+id/action_gardenRequestFragment_to_detailProductFragment"
             app:destination="@id/detailProductFragment" />
@@ -116,5 +119,14 @@
         <action
             android:id="@+id/action_detailProductFragment_to_rentFragment"
             app:destination="@id/rentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.hellogarden.ui.video.VideoFragment"
+        android:label="VideoFragment"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_videoFragment_to_appEinleitungsFragment"
+            app:destination="@id/appEinleitungsFragment" />
     </fragment>
 </navigation>
