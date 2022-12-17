@@ -9,8 +9,8 @@
     <fragment
         android:id="@+id/greetingFragment"
         android:name="com.example.hellogarden.ui.greetings.GreetingFragment"
-        android:label="fragment_greeting"
-        tools:layout="@layout/fragment_greeting" >
+        android:label="Begruessung"
+        tools:layout="@layout/fragment_greeting">
         <action
             android:id="@+id/action_greetingFragment_to_appEinleitungsFragment"
             app:destination="@id/appEinleitungsFragment" />
@@ -18,8 +18,8 @@
     <fragment
         android:id="@+id/appEinleitungsFragment"
         android:name="com.example.hellogarden.ui.appeinleitung.AppEinleitungsFragment"
-        android:label="fragment_app_einleitungs"
-        tools:layout="@layout/fragment_app_einleitungs" >
+        android:label="AppEinleitung"
+        tools:layout="@layout/fragment_app_einleitungs">
         <action
             android:id="@+id/action_appEinleitungsFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
@@ -30,8 +30,8 @@
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.hellogarden.ui.signup.SignUpFragment"
-        android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" >
+        android:label="Registrieren"
+        tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_signUpFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -42,8 +42,8 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.hellogarden.ui.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="Anmeldung"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -51,8 +51,8 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.hellogarden.ui.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:label="MemberBereich"
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_detailGardenFragment"
             app:destination="@id/detailGardenFragment" />
@@ -69,8 +69,8 @@
     <fragment
         android:id="@+id/detailGardenFragment"
         android:name="com.example.hellogarden.ui.detail.DetailGardenFragment"
-        android:label="fragment_detail_garden"
-        tools:layout="@layout/fragment_detail_garden" >
+        android:label="Informationen"
+        tools:layout="@layout/fragment_detail_garden">
         <action
             android:id="@+id/action_detailGardenFragment_to_gardenRequestFragment"
             app:destination="@id/gardenRequestFragment" />
@@ -78,22 +78,22 @@
     <fragment
         android:id="@+id/galleryFragment"
         android:name="com.example.hellogarden.ui.gallery.GalleryFragment"
-        android:label="fragment_gallery"
+        android:label="Meine Gallery"
         tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/myRentsFragment"
         android:name="com.example.hellogarden.ui.myrent.MyRentsFragment"
-        android:label="fragment_my_rents"
+        android:label="Zusammenfassung"
         tools:layout="@layout/fragment_my_rents" />
     <fragment
         android:id="@+id/rentFragment"
         android:name="com.example.hellogarden.ui.myrent.RentFragment"
-        android:label="fragment_rent"
+        android:label="Hier könnt ihr euren Garten Mieten"
         tools:layout="@layout/fragment_rent" />
     <fragment
         android:id="@+id/gardenRequestFragment"
         android:name="com.example.hellogarden.GardenRequestFragment"
-        android:label="gardenRequest"
+        android:label="Angebote"
         tools:layout="@layout/fragment_garden_request">
         <action
             android:id="@+id/action_gardenRequestFragment_to_detailProductFragment"
@@ -102,8 +102,8 @@
     <fragment
         android:id="@+id/profilFragment"
         android:name="com.example.hellogarden.ui.profil.ProfilFragment"
-        android:label="fragment_profil"
-        tools:layout="@layout/fragment_profil" >
+        android:label="Mein Profil"
+        tools:layout="@layout/fragment_profil">
         <action
             android:id="@+id/action_profilFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -111,8 +111,8 @@
     <fragment
         android:id="@+id/detailProductFragment"
         android:name="com.example.hellogarden.DetailProductFragment"
-        android:label="fragment_detail_product"
-        tools:layout="@layout/fragment_detail_product" >
+        android:label="AngebotsDetails"
+        tools:layout="@layout/fragment_detail_product">
         <argument
             android:name="productId"
             app:argType="integer" />

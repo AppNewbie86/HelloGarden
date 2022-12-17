@@ -20,7 +20,7 @@
             android:fontFamily="@font/atma_light"
             android:text="Miete hier dein Garten"
             android:textColor="#009688"
-            android:textSize="34sp"
+            android:textSize="48sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

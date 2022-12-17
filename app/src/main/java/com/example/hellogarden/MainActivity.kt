@@ -1,6 +1,7 @@
 package com.example.hellogarden
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
@@ -39,5 +40,18 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    fun hideToolBar() {
+        binding.toolbar.visibility = View.GONE
+
+    }
+
+    /**
+     * Navbar wird sichtbar gemacht
+     */
+
+    fun showToolBar() {
+        binding.toolbar.visibility = View.VISIBLE
     }
 }

@@ -62,6 +62,19 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView17"
                 app:srcCompat="@drawable/bar" />
 
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/atma_light"
+                android:text="Profile"
+                android:textColor="#0B0A0A"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView17" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 

@@ -36,7 +36,7 @@
                 android:fontFamily="@font/atma_light"
                 android:text="Warenkorb"
                 android:textColor="#009688"
-                android:textSize="34sp"
+                android:textSize="48sp"
                 app:layout_constraintStart_toStartOf="@+id/cardView"
                 app:layout_constraintTop_toTopOf="parent" />
 
