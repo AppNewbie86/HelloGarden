@@ -189,11 +189,11 @@
                 android:layout_height="96dp"
                 android:background="#E4E2E2"
                 android:elevation="20dp"
+                android:fontFamily="@font/atma_light"
                 android:text="Miete dir jetzt deinen Garten"
                 android:textColor="#009688"
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
